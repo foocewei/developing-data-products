@@ -11,16 +11,8 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## MTCARS Dataset
-This shiny app uses data from the MTCARS dataset.
-```{r}
-library(datasets)
-head(mtcars)
-```
-
----
-
 ## Output
+This shiny app uses data from the MTCARS dataset.
 It displays a boxplot of the selected variable against miles per gallon (mpg).
 For example, cylinders (cyl) against mpg.
 
