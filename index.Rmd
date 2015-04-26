@@ -1,0 +1,57 @@
+---
+title       : MTCARS Data Visualisation
+subtitle    : Course Project for Developing Data Products
+author      : Foo Ce Wei
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## MTCARS Dataset
+This shiny app uses data from the MTCARS dataset.
+```{r}
+library(datasets)
+head(mtcars)
+```
+
+---
+
+## Output
+It displays a boxplot of the selected variable against miles per gallon (mpg).
+For example, cylinders (cyl) against mpg.
+
+```{r echo=FALSE}
+boxplot(mpg~cyl, data = mtcars)
+```
+
+---
+
+## Input Variable
+You can specify one of the following variables to plot against mpg:
+* Cylinders (cyl)
+* Transmission (am)
+* Gears (gear)
+* Carburetors (carb)
+* Weight (wt)
+* Displacement (disp)
+* Horsepower (hp)
+
+---
+
+## Boxplot Colour
+You can also specify one of the following colours for the boxplot:
+* White
+* Blue
+* Green
+* Red
+* Yellow
+
+---
+
+## Have Fun!
+The shiny app can be accessed via the following link:
+[http://foocewei.shinyapps.io/mtcars](http://foocewei.shinyapps.io/mtcars)
